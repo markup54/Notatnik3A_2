@@ -9,16 +9,23 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Plik">
-                
+                <MenuItem Header="Nowy" Click="MenuItem_Nowy_Click"/>
+                <MenuItem Header="Zapisz"/>
+                <MenuItem Header="Zapisz jako" Click="MenuItem_Zapiszjako_Click"/>
+                <MenuItem Header="Otwórz" Click="MenuItem_Otworz_Click"/>
+                <MenuItem Header="Zamknij"/>
             </MenuItem>
             <MenuItem Header="Edycja"></MenuItem>
             <MenuItem Header="Informacje">
-                <MenuItem Header="O programie"/>
-                <MenuItem Header="O autorze"/>
+                <MenuItem Header="O programie"
+                          Click="MenuItem_Oprogramie_Click"
+                          />
+                <MenuItem Header="O autorze"
+                          Click="MenuItem_Oautorze_Click"/>
 
 
             </MenuItem>
         </Menu>
-        <TextBox></TextBox>
+        <TextBox x:Name="notatka_textbox"></TextBox>
     </DockPanel>
 </Window>
